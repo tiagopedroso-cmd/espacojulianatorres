@@ -220,6 +220,49 @@ document.addEventListener('DOMContentLoaded',()=>{const old=document.querySelect
     observer.observe(document.body, { childList: true, subtree: true });
   });
 </script>
+<style>
+  .treatment .treatment-media {
+    width: calc(100% + 46px) !important;
+    height: 170px !important;
+    margin: -23px -23px 19px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 13px 13px 0 0;
+  }
+  @media (max-width: 767px) {
+    .treatment .treatment-media { height: 155px !important; }
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const treatmentImages = {
+      'Limpeza de Pele': 'Limpeza de Pele.png',
+      'Limpeza de Pele 50+': 'Limpeza de Pele 50+.png',
+      'Depilação com Cera': 'Depilação com Cera.png',
+      'Massagem Relaxante': 'Massagem Relaxante.png',
+      'Ventosaterapia': 'Ventosaterapia.png',
+      'Escalda-Pés': 'Escalda-Pés.png',
+      'Massagem com Pedras Quentes': 'Massagem com Pedras Quentes.png',
+      'Tratamentos Corporais': 'Tratamentos Corporais.png',
+      'Escleroterapia': 'Escleroterapia.png'
+    };
+
+    document.querySelectorAll('.treatment').forEach(card => {
+      const title = card.querySelector('h3')?.textContent.trim();
+      const source = treatmentImages[title];
+      if (!source) return;
+      let image = card.querySelector('.treatment-media');
+      if (!image) {
+        image = document.createElement('img');
+        image.className = 'treatment-media';
+        image.loading = 'lazy';
+        card.prepend(image);
+      }
+      image.src = encodeURI(source);
+      image.alt = `Tratamento: ${title}`;
+    });
+  });
+</script>
 <main id="conteudo">
 <section class="hero" id="inicio" aria-labelledby="hero-title"><div class="service-marquee" aria-hidden="true"><div class="service-marquee__track"><span>Limpeza de Pele</span><span>Limpeza de Pele 50+</span><span>Depilação com Cera</span><span>Massagem Relaxante</span><span>Ventosaterapia</span><span>Escalda-Pés</span><span>Massagem com Pedras Quentes</span><span>Tratamentos Corporais</span><span>Escleroterapia</span><span>Limpeza de Pele</span><span>Limpeza de Pele 50+</span><span>Depilação com Cera</span><span>Massagem Relaxante</span><span>Ventosaterapia</span><span>Escalda-Pés</span><span>Massagem com Pedras Quentes</span><span>Tratamentos Corporais</span><span>Escleroterapia</span></div></div><img class="hero-person" src="Sobrepor Hero.png" alt="Juliana Torres, profissional de estética, usando jaleco branco" fetchpriority="high"><div class="wrap hero-content"><h1 id="hero-title"><span class="hero-title-line">Realce sua beleza.</span><span class="hero-title-line">Renove seu <em>bem-estar.</em></span></h1><p class="hero-copy"><span>Tratamentos personalizados para cuidar da sua pele, aliviar</span><span>tensões e realçar sua beleza, com atenção especial ao seu bem-estar.</span></p><div class="quick-card"><h2 id="quick-title">Agendamento Rápido</h2><div class="quick-selection"><div class="quick-days" role="group" aria-label="Escolha uma data"><button class="quick-day is-selected" type="button"><span>SEG</span><span>02</span></button><button class="quick-day" type="button"><span>TER</span><span>03</span></button><button class="quick-day" type="button"><span>QUA</span><span>04</span></button><button class="quick-day" type="button"><span>QUI</span><span>05</span></button><button class="quick-day" type="button"><span>SEX</span><span>06</span></button><button class="quick-day" type="button"><span>SÁB</span><span>07</span></button></div><div class="quick-times" role="group" aria-label="Escolha um horário"><button class="quick-time is-selected" type="button">08:00</button><button class="quick-time" type="button">08:30</button><button class="quick-time" type="button">09:00</button><button class="quick-time" type="button">09:30</button><button class="quick-time" type="button">10:00</button><button class="quick-time" type="button">10:30</button><button class="quick-time" type="button">11:00</button><button class="quick-time" type="button">11:30</button><button class="quick-time" type="button">12:00</button><button class="quick-time" type="button">12:30</button><button class="quick-time" type="button">13:00</button><button class="quick-time" type="button">13:30</button><button class="quick-time" type="button">14:00</button><button class="quick-time" type="button">14:30</button><button class="quick-time" type="button">15:00</button><button class="quick-time" type="button">15:30</button><button class="quick-time" type="button">16:00</button><button class="quick-time" type="button">16:30</button><button class="quick-time" type="button">17:00</button></div><p class="quick-note">Atendimentos de 30 minutos • Último horário inicia às 17h00</p><button class="button" id="quick-continue" type="button">CONTINUAR AGENDAMENTO <span aria-hidden="true">→</span></button></div><form class="quick-form" id="quick-form" hidden><label>Nome completo (obrigatório)<input name="quick-name" required autocomplete="name"></label><label>Telefone (obrigatório)<input name="quick-phone" required type="tel" autocomplete="tel"></label><label>Qual cuidado você procura? (opcional)<select name="quick-care"><option value="">Selecione, se desejar</option><option>Limpeza de Pele</option><option>Depilação com Cera</option><option>Massagem Relaxante</option><option>Ventosaterapia</option><option>Escalda-Pés</option><option>Massagem com Pedras Quentes</option><option>Tratamentos Corporais</option><option>Escleroterapia</option></select></label><label>Email para receber o convite na agenda (opcional)<input name="quick-email" type="email" autocomplete="email"></label><button class="button" type="submit">CONFIRMAR AGENDAMENTO <span aria-hidden="true">→</span></button></form></div></div></section>
 <section class="section section--white"><div class="wrap intro"><div><p class="eyebrow">SEU MOMENTO</p><h2 class="title">Quando foi a última vez que você reservou um momento só para você?</h2></div><div><p>Na correria do dia a dia, é fácil deixar o autocuidado para depois.</p><p>A pele pede atenção. O corpo acumula tensão. E aquele momento que seria seu acaba sempre ficando para outro dia.</p><p>No Espaço Juliana Torres, cuidar da sua aparência é também cuidar de como você se sente.</p><p>Aqui, cada atendimento é pensado para proporcionar uma experiência de cuidado, leveza, confiança e bem-estar.</p><p>Você cuida de tanta coisa. Está na hora de cuidar de você também.</p><a class="button" href="#agendamento">QUERO ME CUIDAR <span aria-hidden="true">→</span></a></div></div></section>
