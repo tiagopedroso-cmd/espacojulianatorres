@@ -1,0 +1,244 @@
+Design System — Espaço Juliana Torres
+1. Direção visual
+Conceito: Elegância acolhedora + estética clínica + autocuidado.
+A página deve transmitir três sensações simultaneamente:
+Confiança profissional — precisa parecer um espaço sério e especializado.
+Acolhimento — evitar a aparência excessivamente hospitalar de algumas clínicas.
+Beleza premium acessível — sofisticada, mas sem parecer uma clínica de luxo distante da realidade da cliente.
+Visualmente, usaria bastante off-white e rosé muito claro como base, vinho em textos e CTAs, terracota/rosa queimado nos detalhes e pequenas aplicações de dourado/nude.
+2. Paleta de cores
+Principal
+Cor	HEX	Aplicação
+Vinho Juliana	#773B3F	CTA, títulos especiais, elementos fortes
+Terracota Rosé	#B9675E	Destaques, ícones, badges
+Rosé Nude	#D89A8E	Elementos secundários
+Blush	#F1D4CB	Cards e fundos suaves
+
+
+O #773B3F seria a cor de conversão principal.
+Neutros
+Cor	HEX	Aplicação
+Ivory	#FFF9F6	Background principal
+Nude claro	#F8ECE7	Alternância de seções
+Branco	#FFFFFF	Cards
+Marrom profundo	#402B2C	Texto principal
+Taupe	#806A68	Texto secundário
+Border	#EADAD5	Divisórias e bordas
+
+
+Em vez de preto puro, eu usaria #402B2C. Isso mantém o contraste sem quebrar a delicadeza da identidade.
+Cor especial
+Champagne: #C6A27A
+Usar muito pouco: estrelas, pequenos detalhes, selo premium e elementos decorativos. Não como cor principal de CTA.
+3. Proporção de cores
+Eu seguiria aproximadamente:
+60% Ivory / branco
+20% Nude e blush
+15% Vinho / terracota
+5% Champagne e detalhes
+Isso evita que a página fique excessivamente rosa ou vinho.
+4. Tipografia
+A combinação da referência funciona porque mistura uma serifada elegante com uma sans-serif extremamente legível.
+Para a Juliana:
+Títulos — Cormorant Garamond
+Alternativa: DM Serif Display.
+Eu prefiro Cormorant Garamond para essa identidade.
+Interface e textos — Manrope
+Alternativas: Inter ou DM Sans.
+Combinação recomendada:
+Cormorant Garamond + Manrope
+Isso entrega a sensação editorial/premium sem comprometer a leitura.
+Hierarquia
+H1 — Hero
+Cormorant Garamond
+64–72px desktop
+42–48px mobile
+Peso 500
+Line-height: 0.95–1.05
+Cuidar de você também precisa
+fazer parte da sua rotina.
+
+Palavras estratégicas podem receber o Terracota Rosé.
+H2 — Seções
+Cormorant Garamond
+44–52px desktop
+34–38px mobile
+Peso 500
+Line-height: 1.05
+H3 — Cards
+Manrope
+18–22px
+Peso 600
+Eyebrow / sobretítulo
+Manrope
+12–13px
+Peso 600
+Letter-spacing: 0.10em
+Uppercase
+Exemplo:
+ESTÉTICA • SAÚDE • BEM-ESTAR
+Body
+Manrope
+16–18px
+Peso 400
+Line-height: 1.6
+Texto auxiliar
+Manrope
+14px
+Cor #806A68
+5. Botões
+Os botões precisam ser muito claros porque o objetivo principal é agendamento via WhatsApp.
+Primary CTA
+Fundo: #773B3F
+Texto: #FFFFFF
+Altura: 52–56px
+Padding horizontal: 26–32px
+Border radius: 10px
+Fonte: Manrope 14px / 600
+Exemplo:
+AGENDAR MEU HORÁRIO →
+Hover:
+#663236
+com pequeno deslocamento:
+transform: translateY(-2px)
+Secondary
+Background transparente
+Border: 1px solid #B9675E
+Texto: #773B3F
+VER TRATAMENTOS
+CTA WhatsApp
+Apesar do destino ser WhatsApp, eu não usaria verde como cor dominante.
+Manteria o botão vinho e utilizaria apenas o ícone do WhatsApp. Assim a página não perde consistência visual.
+6. Cards de tratamentos
+Aqui vale seguir bastante a lógica da referência.
+Imagem na parte superior + conteúdo inferior.
+Estrutura:
+[Imagem]  
+LIMPEZA DE PELE
+Pele limpa, renovada e com mais vida.  
+Saiba mais →
+
+Configuração:
+Background #FFFFFF
+Border 1px solid #F0E3DF
+Radius 14px
+Overflow hidden
+Padding interno 20–24px
+Hover
+Elevação pequena, nunca exagerada:
+translateY(-4px)
+Shadow:
+0 12px 35px rgba(73, 43, 43, 0.08)
+A fotografia deve continuar sendo protagonista.
+7. Cards de benefícios
+Mais minimalistas que os cards de tratamentos.
+Ícone circular rosé + título + descrição.
+Exemplo:
+◯
+Atendimento personalizado
+Cada cuidado começa entendendo o que você busca.
+Background branco ou transparente.
+Sem sombras fortes.
+8. Inputs
+Para formulário ou contato:
+Background: #FFFFFF
+Border: 1px solid #E5D4CF
+Radius: 10px
+Altura: 52px
+Padding: 0 16px
+Focus
+Border:
+#B9675E
+Shadow:
+0 0 0 3px rgba(185, 103, 94, 0.12)
+Labels sempre visíveis acima do campo.
+Evitaria depender exclusivamente de placeholder.
+9. Border Radius
+Não deixaria tudo excessivamente arredondado.
+A identidade pede elegância, não estética de aplicativo.
+Botões: 10px
+Inputs: 10px
+Cards: 14px
+Fotos grandes: 18–24px
+Badges: 999px
+Containers especiais: 20px
+Uma característica interessante pode ser utilizar algumas imagens com formas orgânicas/arcos, como na referência.
+10. Sombras
+Muito discretas.
+Card
+0 8px 30px rgba(64, 43, 44, 0.06)
+Card hover
+0 16px 40px rgba(64, 43, 44, 0.10)
+Elementos flutuantes
+0 12px 40px rgba(64, 43, 44, 0.12)
+Evitaria sombras cinza ou pretas pesadas.
+11. Espaçamento
+A referência funciona justamente porque existe bastante respiro.
+Desktop
+Container máximo: 1200–1280px
+Padding lateral: 64px
+Espaçamento entre seções:
+96–120px
+Mobile
+Padding lateral: 20–24px
+Espaçamento entre seções:
+64–80px
+Grid
+Desktop: 12 colunas
+Tablet: 8
+Mobile: 4
+Gap:
+24–32px desktop
+16–20px mobile
+12. Fotografias
+Isso será muito importante para essa LP.
+Eu evitaria imagens genéricas de banco sempre que houver material próprio.
+Precisamos misturar:
+Juliana + clientes + procedimentos + detalhes do espaço + resultados.
+A pessoa precisa perceber rapidamente que existe uma profissional real e um espaço real em Arujá.
+No Hero, particularmente, usaria uma fotografia profissional da Juliana ou uma cena de procedimento — não uma modelo genérica.
+13. Elementos gráficos
+Para aproximar o Design System da identidade atual da Juliana:
+Linhas finas
+1px #D9B5AB
+Ícones lineares
+Terracota ou vinho.
+Folhagens minimalistas
+Apenas como elemento decorativo de background.
+Monograma JT
+Pode aparecer em marca d'água com 3–5% de opacidade.
+Formas orgânicas
+Rosé extremamente claro atrás de fotografias.
+Evitaria excesso de flores, brilhos, degradês e elementos decorativos típicos de templates de estética.
+14. Seções e alternância visual
+Para não termos uma página inteira branca:
+Hero → Ivory
+Benefícios rápidos → Branco
+Tratamentos → Ivory
+Sobre Juliana → Nude
+Tratamento destaque → Branco
+Resultados → Ivory
+Depoimentos → Nude claro
+Localização → Branco
+CTA final → Vinho
+O CTA final em #773B3F cria um fechamento visual muito forte.
+15. Regra principal de conversão
+A página inteira deve trabalhar com apenas uma ação principal: falar com a Juliana/agendar pelo WhatsApp.
+Por isso, eu padronizaria praticamente todos os CTAs para variações de:
+AGENDAR MEU HORÁRIO →
+FALAR COM A JULIANA →
+QUERO ESSE CUIDADO →
+Os tratamentos podem ter “Saiba mais”, mas a conversão sempre termina no WhatsApp.
+Resumo do Design System
+Personalidade: feminina, sofisticada, acolhedora e profissional.
+Primary: #773B3F
+Secondary: #B9675E
+Background: #FFF9F6
+Text: #402B2C
+Heading: Cormorant Garamond
+Body/UI: Manrope
+Cards: brancos, radius 14px, bordas finas e sombras suaves.
+CTA: vinho sólido, contrastante e recorrente.
+Fotografia: clara, natural, real e humana.
+Direção: menos “salão de beleza” e mais clínica boutique de estética e bem-estar.
+Combinando isso com a copy que estruturamos, a identidade da Juliana tem potencial para ficar visualmente próxima da sofisticação da referência, mas preservando o vinho/rosé e o caráter pessoal do Espaço Juliana Torres, em vez de parecer uma cópia da Radiance.
